@@ -8,6 +8,8 @@ The content of this repository served as an assignment project requested for the
 
 Student Involved:
 - Mario De Los Santos. Github: <a href="https://github.com/MarSH-Up">MarSH-Up</a>. Email: madlsh3517@gmail.com
+Professor:
+- PhD <a href="https://ccc.inaoep.mx/~esucar/">Enrique Sucar</a>.
 
 
 <em>Instructions</em>
