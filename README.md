@@ -1,2 +1,2 @@
-# Hidden-Markovs-Model_Fowarding-Algorith
+# Hidden-Markovs-Model_Fowarding-AlgorithM
 Probabilistic Graphical Model method for HMMs
