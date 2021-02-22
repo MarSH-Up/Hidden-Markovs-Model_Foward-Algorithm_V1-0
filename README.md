@@ -6,10 +6,13 @@ The content of this repository served as an assignment project requested for the
 
 <h3>Description:</h3> Implement the Forward algorithm for estimating the probability of a sequence of observations given the model. The program should work for any discrete HMM and any observation sequence.
 
-Student Involved:
-- Mario De Los Santos. Github: <a href="https://github.com/MarSH-Up">MarSH-Up</a>. Email: madlsh3517@gmail.com
 Professor:
 - PhD <a href="https://ccc.inaoep.mx/~esucar/">Enrique Sucar</a>.
+
+Student Involved:
+- Mario De Los Santos. Github: <a href="https://github.com/MarSH-Up">MarSH-Up</a>. Email: madlsh3517@gmail.com
+
+
 
 
 <em>Instructions</em>
