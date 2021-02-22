@@ -1,3 +1,4 @@
+
 /* Assigment 2: HMMs Forward
  * Description: Implement the Foward Algorithm for estimating the probability of a sequence of observations give the model.
  * The program should work for any discrete HMM an any observation sequence.
@@ -16,6 +17,8 @@
  *            London: Springer London. doi, 10(978), 2
  */
 #include <iostream>
+#include <vector>
+#include <math.h>
 #include <string>
 #include <fstream>
 using namespace std;
@@ -46,7 +49,7 @@ class HMMs_Forward{
      *
      * π = S0,S1,S2, ..., S10
      * The number of accepted states can be improved by modifying px variable,
-     * right not delimited to 10 possibles states;
+     * right now delimited to 10 possibles states;
      *
      * */
     float Trans_matrix[px][py]={0}; //A
@@ -92,8 +95,8 @@ public:
 
             //Functions to extract the matrixes with the needed information
             Probability_vector(No_states);
-            Obs_matrix(No_states, No_Observations);
             Transition_matrix(No_Observations);
+            Obs_matrix(No_states, No_Observations);
         }
         else
             cout<<"Invalid register"<<endl;
@@ -113,32 +116,42 @@ private:
         {
             cout<<"S"<<i<<endl;
             cin>>Prob_vector[i];}
-        /* Debbuging process
+        // Debbuging process
         cout<<"Confirmation"<<endl;
         for(int i=0;i<n_states;i++) {
             cout<<"S"<<i<<" "<<Prob_vector[i]<<" ";
-        }*/
+        }
     }
     void Obs_matrix(int n_states, int n_obs)
     {
         cout<<"Insert Observation Matrix: "<<endl;
-        for(int i=0;i<n_states;i++)
-            for(int j=0;j<n_obs;j++)
-                cin>>Observation_matix[i][j];
-
-        /* Debbuging process
+        for(int i=0;i<n_states;i++) {
+            for (int j = 0; j < n_obs; j++) {
+                cout << "S" << i << " to O" << j << endl;
+                cin >> Observation_matix[i][j];
+            }
+        }
+        // Debbuging process
         for(int i=0;i<n_states;i++)
         {
             for(int j=0;j<n_obs;j++) {
-                cout << Trans_matrix[i][j]<<" ";
-            }cout<<endl;}*/
+                cout <<Observation_matix[i][j]<<" ";
+            }cout<<endl;}
     }
     void Transition_matrix(int n_states)
     {
         cout<<"Insert Transition Matrix: "<<endl;
-        for(int i=0;i<n_states;i++)
-            for(int j=0;j<n_states;j++)
-                cin>>Trans_matrix[i][j];
+        for(int i=0;i<n_states;i++){
+            for(int j=0;j<n_states;j++) {
+                cout << "S" << i << " to S" << j << endl;
+                cin >> Trans_matrix[i][j];
+            }
+        }
+        for(int i=0;i<n_states;i++){
+            for(int j=0;j<n_states;j++) {
+                cout<< Trans_matrix[i][j]<<" ";
+            }cout<<endl;
+        }
     }
 
 public:
@@ -211,10 +224,10 @@ int main()
     double result = 0; //Variable just to reproduce the return of the class
 
     //Object creation, passing the predefined parameters, then you would need to fit the vectors needed to operate
-    HMMs_Forward T1(2,2);
+    HMMs_Forward T1(3,3);
 
     //Operational functions will return the Probability of the given sequence that is going to be requested here.
-    result = T1.Fordward_Operation(2);
+    result = T1.Fordward_Operation(4);
 
     //Basic stuff
     cout<<"Resultado: "<<result<<endl;
