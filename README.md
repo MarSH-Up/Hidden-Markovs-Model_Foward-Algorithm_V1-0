@@ -44,6 +44,7 @@ To run in your would need basically 3 staments:
         *     O3 .  .  .
         *     .  .  .  .
         *     On .  .  .
-![Console example](Console_example.PNG)
+- ![Console example](Console_example.PNG)
+
 #References
 -  Sucar, L. E. (2020). Probabilistic graphical models. Advances in Computer Vision and Pattern Recognition.London: Springer London. doi, 10(978), 2
