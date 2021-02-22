@@ -1,8 +1,6 @@
-
 /* Assigment 2: HMMs Forward
  * Description: Implement the Foward Algorithm for estimating the probability of a sequence of observations give the model.
  * The program should work for any discrete HMM an any observation sequence.
- *
  *
  * Version: 1.0
  * Date: 2021 February
@@ -22,10 +20,10 @@
 using namespace std;
 //CSV Class to extract the information
 //General use to export
-//To add version v2.0, you should be able to pass the information thru a .txt or .csv file
+
 class File_handling{
     string file_2extract;
-
+//To add version v2.0, you should be able to pass the information thru a .txt or .csv file
 };
 
 //Class for HMMs Fowarding
@@ -231,3 +229,4 @@ int main()
     cout<<"Resultado: "<<result<<endl;
 
 }
+
