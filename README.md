@@ -36,7 +36,8 @@ To run in your would need basically 3 staments:
 2. Transition Matrix: representes the cost of the transition between states.
 
 3. Observation Matrix:represent the probability for each state to reach determinated "status"
-
+The next image shows a basic example taken from the referenced book with the following information: 
+- ![Exercise example](example.PNG)
 - ![Console example](Console_example.PNG)
 
 #References
