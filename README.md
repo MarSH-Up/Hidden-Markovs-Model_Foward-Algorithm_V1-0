@@ -38,6 +38,7 @@ To run in you would need  3 statements:
 3. Observation Matrix: represent the probability for each state to reach the given "status"
 The next image shows a basic example taken from the referenced book with the following information: 
 - ![Example](example.PNG)
+- Sequence HHTT
 - ![Console example](Console_example.PNG)
 
 #References
