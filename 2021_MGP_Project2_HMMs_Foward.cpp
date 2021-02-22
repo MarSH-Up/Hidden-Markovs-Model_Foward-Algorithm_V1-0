@@ -16,8 +16,6 @@
  *            London: Springer London. doi, 10(978), 2
  */
 #include <iostream>
-#include <vector>
-#include <math.h>
 #include <string>
 #include <fstream>
 using namespace std;
