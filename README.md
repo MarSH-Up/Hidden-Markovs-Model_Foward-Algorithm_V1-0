@@ -34,21 +34,9 @@ To run in your would need basically 3 staments:
         π = S0,S1,S2, ..., S10
     - The number of accepted states can be improved by modifying px variable, right now delimited to 10 possibles states, Sn.
 2. Transition Matrix: representes the cost of the transition between states.
-    -    *        S0 S1 S2 .. Sn
-         * A = S0 .  .  .
-         *     S1 .  .  .
-         *     S2 .  .  .
-         *     .  .  .  .
-         *     .  .  .  .
-         *     Sn .  .  .
+
 3. Observation Matrix:represent the probability for each state to reach determinated "status"
-    -   *        S0 S1 S2 S3 ... Sn
-        * B = O0 .  .  .
-        *     O1 .  .  .
-        *     O2 .  .  .
-        *     O3 .  .  .
-        *     .  .  .  .
-        *     On .  .  .
+
 - ![Console example](Console_example.PNG)
 
 #References
