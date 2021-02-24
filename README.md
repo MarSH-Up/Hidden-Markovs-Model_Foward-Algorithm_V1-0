@@ -37,9 +37,9 @@ To run in you would need  3 statements:
 
 3. Observation Matrix: represent the probability for each state to reach the given "status"
 The next image shows a basic example taken from the referenced book with the following information: 
-- ![example](/images/example.PNG)
+- ![example](Images/example.PNG)
 - Sequence HHTT
-- ![Console example](/images/Console_example.PNG)
+- ![Console example](Images/Console_example.PNG)
 
 #References
 -  Sucar, L. E. (2020). Probabilistic graphical models. Advances in Computer Vision and Pattern Recognition.London: Springer London. doi, 10(978), 2
